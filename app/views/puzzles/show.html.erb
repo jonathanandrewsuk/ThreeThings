@@ -1,0 +1,43 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<p id="notice"><%= notice %></p>
+
+
+
+
+
+
+
+
+<div class="w3-container w3-green">
+  <h1><%= @puzzle.phrase %><br></h1>
+  <p>Resize this responsive page!</p>
+</div>
+
+<div class="w3-row-padding">
+  <div class="w3-third">
+    <h2>London</h2>
+    <div style="width:100%;height:0;padding-bottom:75%;position:relative;"><iframe src="https://giphy.com/embed/JXHhI4o9NCf8k" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p>
+    <%= @puzzle.img_url1 %><br>
+  </div>
+
+  <div class="w3-third">
+    <h2>Paris</h2>
+<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/cHGJwA8aO8epq" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+<%= @puzzle.img_url2 %><br>
+  </div>
+
+  <div class="w3-third">
+    <h2>Tokyo</h2>
+    <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/l0MYAMG9uhRUyh7zi" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+
+    <%= @puzzle.img_url3 %><br>
+  </div>
+</div>
+
+
+
+
+<%= link_to 'Edit', edit_puzzle_path(@puzzle) %> |
+<%= link_to 'Back', puzzles_path %>
